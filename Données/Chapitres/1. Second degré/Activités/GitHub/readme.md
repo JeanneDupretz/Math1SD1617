@@ -1,5 +1,5 @@
 1. Aller sur le site [GitHub.com](https://github.com/)
-1. Effectuer une recherche en utilisant le mot clé edisonlorgues.
+1. Effectuer une recherche en utilisant le mot clé math1sd.
 1. Explorer l'organisation [EdisonLorgues1SD1617](https://github.com/EdisonLorgues1SD1617).
 1. Explorer le dépot [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Math1SD1617).
 1. Prendre connaissance du [cahier de textes](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Cahier%20de%20textes/readme.md) et des devoirs qui y sont écrits.
