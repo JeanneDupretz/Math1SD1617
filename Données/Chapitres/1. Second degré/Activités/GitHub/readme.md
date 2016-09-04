@@ -6,7 +6,7 @@
 1. Parcourir les membres de l'organisation [EdisonLorgues1SD1617](https://github.com/EdisonLorgues1SD1617).
 1. Prendre note du compte qui a été créé à votre nom.
 1. [Ouvrir une session](https://github.com/login?return_to=%2FEdisonLorgues1SD1617%2FMath1SD1617%2Ftree%2Fmaster%2FDonn%25C3%25A9es%2FChapitres%2F1.%2520Second%2520degr%25C3%25A9%2FActivit%25C3%25A9s%2FGitHub) avec le compte à votre nom.
-1. Ouvrir le menu Settings/account accessible depuis en haut à droite.
+1. Ouvrir le menu [Settings/account](https://github.com/settings/profile) accessible depuis en haut à droite.
 1. Modifier le mot de passe de votre compte.
 1. Ajouter une adresse mail de votre choix à votre compte.
 1. Valider ces modifications en commentant l'issue prévue à cette effet sur le dépôt [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Math1SD1617/issues/1).
