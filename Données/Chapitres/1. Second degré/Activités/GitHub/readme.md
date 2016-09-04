@@ -18,4 +18,4 @@ Initialize this repository with a README.
 1. Proposer une correction de l'exercice de l'élève exemple élève1sd1617.
 1. Créer un projet shareLaTeX en partant de ce modèle de fichier LaTeX.
 1. Le rendre public en le paramètrant via le menu partage en haut à gauche.
-1. Créer un fichier /33-34-35p38/readme.md dans votre dépôt Devoirs dans lequel vous recopier l'adresse de botre document LaTeX rendu public.
+1. Créer un fichier /33-34-35p38/readme.md dans votre dépôt Devoirs dans lequel vous recopiez l'adresse de votre document LaTeX rendu public.
