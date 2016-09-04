@@ -1,4 +1,4 @@
-Ceci n'est pas écrit
+<!-- Ceci n'est pas écrit
 
 Mardi 6 septembre 2016
 
@@ -11,6 +11,14 @@ Mardi 6 septembre 2016
 1. Théorème 3: forme canonique et variations.
 
 1. Exemple 4: Signe de a et orientation de parabole
+
+***
+
+Devoirs
+
+Pour jeudi 8 septembre 2016
+
+1.  -->
 
 Lundi 5 septembre 2016 (En salle informatique)
 
