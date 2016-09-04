@@ -2,6 +2,8 @@
 
 Mardi 6 septembre 2016
 
+1. Exercice (pendant la vérification des exercices).
+
 1. Activité intéractive [Géogebra](https://www.geogebra.org/apps): Différents types possibles pour les variations et le signe d'un trinôme du second degré.
 
 1. Présentation sur le [second degré ](https://github.com/EdisonLorgues1SD1617/math1sd1617/raw/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Pr%C3%A9sentation/secondDegre.pdf) Définition 1: trinôme, forme développée et paraboles.
@@ -38,7 +40,7 @@ Pour mardi 6 septembre 2016
 
 1. Ajouter une photo à son profil GitHub.
 
-1. [Terminer l'activité GitHub](https://github.com/EdisonLorgues1SD1617/Math1SD1617/tree/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Activit%C3%A9s/GitHub). Poster une issue pour signaler une éventuelle difficulté dans l'utilisation du dépôt de la classe, de votre dépôt personnel ou du site ShareLaTeX. 
+1. [Terminer l'activité GitHub](https://github.com/EdisonLorgues1SD1617/Math1SD1617/tree/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Activit%C3%A9s/GitHub). Poster une issue pour signaler une éventuelle difficulté dans l'utilisation du dépôt de la classe, de votre dépôt personnel ou du site ShareLaTeX.
 
  **Devoir à la maison**:
 
