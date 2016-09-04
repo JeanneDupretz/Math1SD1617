@@ -1,4 +1,4 @@
-1. Aller sur le site [GitHub.com](https://github.com/)
+1. Aller sur le site [www.GitHub.com](https://github.com/)
 1. Effectuer une recherche en utilisant le mot clé math1sd.
 1. Explorer l'organisation [EdisonLorgues1SD1617](https://github.com/EdisonLorgues1SD1617).
 1. Explorer le dépot [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Math1SD1617).
