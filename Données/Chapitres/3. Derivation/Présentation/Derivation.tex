@@ -1,0 +1,241 @@
+\documentclass{beamer}
+
+%\documentclass{article}
+%\usepackage{beamerarticle}
+
+\usepackage[utf8]{inputenc}
+
+%\usetheme{Warsaw}
+%\usetheme{Hannover}
+\usetheme{Berkeley}
+%\usecolortheme{lily}
+\setbeamertemplate{theorems}[numbered] 
+%\setbeamertemplate{theorems}[ams style]
+\date{}
+
+%\theoremstyle{plain}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{tikz,tkz-tab}
+\usepackage{graphics}
+
+\uselanguage{French}
+\languagepath{French}
+
+\newtheorem{proposition}[theorem]{\translate{Proposition}}
+%\newtheorem{example}[theorem]{\translate{Example}}
+\newtheorem{demonstration}[theorem]{Démonstration}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Dérivation}
+
+
+\begin{document}
+  
+  \begin{frame}
+    
+    \titlepage
+   % \maketitle
+    
+  \end{frame}
+  
+   \section{Tangentes et nombres dérivés.}
+  
+  \subsection{Tangente à un graphe.}
+  
+  \begin{frame}
+  
+  \begin{definition}    
+    Soit $f:I \to \R$ une fonction définie sur un 
+    intervalle $I$ de $\R$. Soit $\mathcal{C}_f$ sa 
+    \uncover<2,3,4,5,6>{représentation graphique}.
+    La \textbf{tangente} à $\mathcal{C}_f$ au point 
+    $A(a,\uncover<3,4,5,6>{f(a)})$ est la droite passant par 
+    \uncover<4,5,6>{$A$} la plus proche de $\mathcal{C}_f$ 
+    au voisinage de $a$.
+  \end{definition}
+  
+   \begin{example}
+   
+   La fonction $f:\R \to \R, x \mapsto x^2$ admet une tangente 
+   au point $A(1,\uncover<5,6>{1})$ dont le coefficient
+   directeur vaut \uncover<6>{$2$}.
+   
+  \end{example}
+  
+  \end{frame}
+    
+  \subsection{Nombre dérivé.} 
+  
+  \begin{frame}
+  
+  \begin{definition}
+  On dit que $f$ est \textbf{dérivable en $\mathbf{a}$} si 
+  son \uncover<2,3,4,5,6,7>{graphe} $\mathcal{C}_f$ admet une 
+  \uncover<3,4,5,6,7>{tangente} au point \uncover<4,5,6,7>{$A(a,f(a))$}. 
+  On appelle alors \textbf{nombre dérivé} et on note 
+  $\mathbf{f'(a)}$ le \uncover<5,6,7>{coefficient directeur}
+  de cette tangente.
+  \end{definition}
+  
+   \begin{example}
+   
+   La fonction $f:\R \to \R, x \mapsto x^2$  est dérivable en 
+   \uncover<6,7>{$1$} et $f'(1)=\uncover<7>{2}$.
+   
+  \end{example}
+  
+  \end{frame}
+  
+  \subsection{\'Equation d'une tangente.}
+  
+  \begin{frame}
+       
+   \begin{theorem}
+      Soit $f:I \to \R$ une fonction \uncover<2,3,4,5,6,7>{dérivable} en $a$. 
+      La \uncover<3,4,5,6,7>{tangente} $T_f(a)$ de $f$ en $A(a,(f(a))$ a
+      pour équation $$T_f(a):y=\uncover<4,5,6,7>{f'(a)(x-a)+f(a)}$$
+   \end{theorem}
+   
+    \begin{example}
+  
+  La fonction $f:\R \to \R, x \mapsto x^2$ est 
+  \uncover<5,6,7>{dérivable} en \uncover<6,7>{$1$},
+  $T_f(1)$ a pour équation
+  $$T_f(1):y=\uncover<7>{2(x-1)+1}$$
+  
+   \end{example}
+  \end{frame}
+  
+  \begin{frame}
+   \begin{definition} 
+    
+   Soit $f:I \to \R$. On dit que $f$ est \textbf{dérivable sur 
+   $\mathbf{I}$} si pour tout réel $a$ dans $I$,$f$ est \uncover<2,3,4,5,6,7>{dérivable}
+   en \uncover<3,4,5,6,7>{$a$}. On appelle alors fonction dérivée de $f$ et on note 
+   $f':I \to \R, x \mapsto \uncover<4,5,6,7>{f'(x)}$ 
+   \end{definition}
+   
+   \begin{example}
+    
+  La fonction $f:\R \to \R, x \mapsto x^2$ est \uncover<5,6,7>{dérivable} sur 
+  \uncover<6,7>{$\R$} et $f'(x)=\uncover<7>{2 x}$.  
+    
+   \end{example}
+  \end{frame}
+  
+   \section{Calcul de dérivée.}
+   
+    \subsection{Fonctions de référence.}
+    
+  \begin{frame}
+  
+  \begin{proposition}
+
+  \resizebox{10cm}{!}{
+    \begin{tabular}{|l|p{3cm}|p{3cm}|c|}\hline
+     Fonction $f$ & Domaine de définition & Domaine de dérivabilité & Fonction dérivée $f'$ \\ \hline
+     Fonction constante : $f(x)=k, k$ réel&  $\R$ & $\R$ & $f'(x)=\uncover<2,3,4,5,6>{0}$ \\ \hline
+     Fonction affine: $f(x)=mx+p$, $m$ et $p$ réels & $\R$ & $\R$ & $f'(x)=\uncover<3,4,5,6>{m}$ \\ \hline
+     Fonction puissance: $f(x)=x^n$, n entier naturel & $\R$ & $\R$ & $f'(x)=\uncover<4,5,6>{nx^{n-1}}$ \\ \hline
+     Fonction inverse: $f(x)=\frac{1}{x}$ & $]-\infty;0[ \cup ]0;+\infty [$ & $]-\infty;0[ \cup ]0;+\infty [$ & $f'(x)=\uncover<5,6>{-\frac{1}{x^2}}$ \\ \hline
+     Fonction racine carrée: $f(x)=\sqrt{x}$& $[0;+\infty[$ & $]0;+\infty[$ & $f'(x)=\uncover<6>{\frac{1}{2\sqrt{x}}}$ \\ \hline
+    \end{tabular}
+    }
+    \end{proposition}
+  \end{frame}
+  
+     \subsection{Opérations sur les fonctions dérivables.}
+  
+  \begin{frame}
+   
+  \begin{proposition}
+  Soient $u$ et $v$ deux fonctions dérivables sur un intervalle $I$ et $\lambda$ un réel. 
+  
+  \begin{center}
+    \begin{tabular}{|c|c|} \hline
+   $f$ & $f'$ \\ \hline
+   $u+v$ & $\uncover<2,3,4,5,6>{u'+v'}$ \\ \hline
+   $\lambda u$ & $\uncover<3,4,5,6>{\lambda u'}$ \\ \hline
+   $uv$ & $\uncover<4,5,6>{u'v+uv'}$ \\ \hline
+   $\frac{1}{v}$&$\uncover<5,6>{-\frac{v'}{v^2}}$ \\ \hline
+   $\frac{u}{v}$&$\uncover<6>{\frac{u'v-uv'}{v^2}}$ \\ \hline
+  \end{tabular}
+  \end{center}
+  Toutes ces fonctions sont dérivables sur $I$ sauf les fonctions $\frac{1}{v}$ et $\frac{u}{v}$ 
+  qui sont dérivables seulement où $v$ ne s'annule pas. 
+   
+  \end{proposition}
+  
+  \end{frame}
+  
+  \begin{frame}
+  
+  \begin{example}
+  \begin{enumerate}
+  \item $(5)'=\uncover<2,3,4,5,6,7,8,9,10,11,12,13,14>{0}$
+  \item $(3x-7)'=\uncover<3,4,5,6,7,8,9,10,11,12,13,14>{3}$
+  \item $(x^7)'=\uncover<4,5,6,7,8,9,10,11,12,13,14>{7x^6}$
+  \item $(2x^3-x)'=\uncover<5,6,7,8,9,10,11,12,13,14>{(2x^3)'+(-x)'}
+  =\uncover<6,7,8,9,10,11,12,13,14>{2(x^3)'-(x)'}
+  =\uncover<7,8,9,10,11,12,13,14>{2 \times 3 x^2-1}$
+  \item $(4x^3+3x^2+5x+14)'=\uncover<8,9,10,11,12,13,14>{12x^2+6x+5}$
+  \item $(\sqrt{x}(5x+1))'
+  =\uncover<9,10,11,12,13,14>{(\sqrt{x})'(5x+1)+\sqrt{x}(5x+1)'}
+  =\uncover<10,11,12,13,14>{\frac{1}{2\sqrt{x}}(5x+1)+5\sqrt{x}}$
+  \item $(\frac{1}{x^3+x})'
+  =\uncover<11,12,13,14>{-\frac{(x^3+x)'}{(x^3+x)^2}}
+  =\uncover<12,13,14>{-\frac{3x^2+1}{(x^3+x)^2}}$
+  \item $\frac{x^2+3x+7}{7x+1}
+  =\uncover<13,14>{\frac{(x^2+3x+7)'(7x+1)-(x^2+3x+7)(7x+1)'}{(7x+1)^2}}
+  =\uncover<14>{\frac{(2x+3)(7x+1)-(x^2+3x+7)\times 7}{(7x+1)^2}}$
+  \end{enumerate}
+  \end{example}
+  
+  \end{frame}
+  
+  \section{Signe de la dérivée et sens de variation.}
+  
+  \begin{frame}
+  \begin{theorem}
+    
+   Soit $f$ une fonction \uncover<2,3,4,5,6,7>{dérivable} sur un intervalle $I$.
+   
+   Pour tout $x$ de $I$, $f'(x) \geq 0 \Leftrightarrow$ 
+   $f$ est \uncover<3,4,5,6,7>{croissante} sur $I$.
+   
+   Pour tout $x$ de $I$, $f'(x) \uncover<4,5,6,7>{\leq 0} \Leftrightarrow$ 
+   $f$ est décroissante sur $I$.
+   
+   Pour tout $x$ de $I$, $f'(x)=0 \Leftrightarrow$ 
+   $f$ est \uncover<5,6,7>{constante} sur $I$.
+   
+   Pour tout $x$ de $I$ sauf un nombre fini $f'(x) >0
+   \Leftrightarrow$ $f$ est \uncover<6,7>{strictement croissante} sur $I$.
+   
+   Pour tout $x$ de $I$ sauf un nombre fini \uncover<7>{$f'(x) <0}
+   \Leftrightarrow$ $f$ est strictement décroissante sur $I$.
+  \end{theorem}
+  \end{frame}
+
+    \begin{frame}
+     \begin{example}
+  
+    Soit $f$ la fonction définie sur l'intervalle $[-3;3]$ par $f(x)=-2x^3 -1,5x^2+18 x + 26$
+    
+    \begin{enumerate}
+     \item \'Etudier les variations de la fonction $f$ sur l'intervalle $[-3;3]$.
+     \item En déduire les extremums de la fonction $f$ et préciser en quelles valeurs elles sont
+     atteintes.
+    \end{enumerate}
+    \end{example}
+    \end{frame}
+
+
+  
+  
+\end{document}

@@ -1,0 +1,324 @@
+\documentclass{beamer}
+
+%\documentclass{article}
+%\usepackage{beamerarticle}
+
+\usepackage[utf8]{inputenc}
+
+%\usetheme{Warsaw}
+%\usetheme{Hannover}
+\usetheme{Berkeley}
+%\usecolortheme{lily}
+\setbeamertemplate{theorems}[numbered] 
+%\setbeamertemplate{theorems}[ams style]
+\date{}
+
+%\theoremstyle{plain}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{tikz,tkz-tab}
+\usepackage{graphics}
+
+\uselanguage{French}
+\languagepath{French}
+
+\newtheorem{proposition}[theorem]{\translate{Proposition}}
+%\newtheorem{example}[theorem]{\translate{Example}}
+\newtheorem{demonstration}[theorem]{Démonstration}
+\newtheorem{remark}[theorem]{Remarque}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Suites numériques.}
+
+
+\begin{document}
+  
+  \begin{frame}
+    
+    \titlepage
+   % \maketitle
+    
+  \end{frame}
+  
+  \section{Définition et mode de génération.}
+  
+  \subsection{Définition et notations.}
+ 
+  \begin{frame}
+  
+  \begin{definition}
+  Une \textbf{suite} numérique est une fonction définie sur l'ensemble 
+  des entiers naturels (sauf eventuellement quelques premiers entiers) à valeurs dans l'ensemble
+  des rééls. 
+  \end{definition}
+  
+  \end{frame}
+  
+  \begin{frame}
+   \begin{example} \label{exsuite}
+   \begin{enumerate}
+    \item Soit $u:\mathbb{N} \to \mathbb{R}$, $n \mapsto (-1)^n$. On appelle termes de la suite $(u_n)$ les images 
+    des entiers successifs par $u$.
+   On les note $u_n$ au lieu de $u(n)$. $u_0=\uncover<2,3,4,5,6>{1}$, 
+   $u_1=\uncover<3,4,5,6>{-1}$, $u_2=\uncover<4,5,6>{1}$...
+   \item Soit $(v_n)$ la suite définie par la formule $v_n=\frac{1}{n}$. $v_n$ n'est 
+   définie qu'à partir de $n=\uncover<5,6>{1}$.
+   \item Soit $(w_n)$ la suite définie par la formule $w_n=\sqrt{n-7}$. $w_n$ 
+   n'est définie qu'à partir de $n=\uncover<6>{7}$.
+   \end{enumerate}
+
+  \end{example}
+  
+  \end{frame}
+  
+  \subsection{Définition explicite d'une suite.} 
+    
+  \begin{frame}
+  \begin{definition}
+  Une suite numérique peut être définie par la donnée d'une formule 
+  \textbf{explicite}
+  qui permet de calculer directement chaque terme $u_n$ à l'aide de $n$.
+  \end{definition}
+  \end{frame}
+  
+  \begin{frame}
+   \begin{example}
+   \begin{itemize}
+    \item Les suites de l'exemple \ref{exsuite}: $u_n=(-1)^n$, $v_n=\frac{1}{n}$,$w_n=\sqrt{n-7}$.
+    \item Pour toute fonction $f:[a,+\infty[$, on peut définir la suite
+   $(u_n)_{n \geq a}$ par $u_n=f(\uncover<2>{n})$. 
+   \end{itemize}
+
+  \end{example}
+  \end{frame}
+  
+  \subsection{Définition d'une suite par récurrence.}
+  
+  \begin{frame}
+   \begin{theorem}
+      Une suite numérique peut être définie par la donnée d'un premier terme
+      et d'une relation, dite de \textbf{récurrence}, qui permet de calculer 
+      un terme à partir du précédent.
+   \end{theorem}
+  \end{frame}
+  
+  \begin{frame}
+    \begin{example}
+    \begin{enumerate}
+    \item
+    Soit $(u_n)$ la suite définie par récurrence par: $u_0=3$ et pour tout entier n, $u_{n+1}=2u_n-1$.
+
+  $u_1=2\uncover<2,3,4> {u_0}-1=2 \times 3-1=5$, $u_2=2 \uncover<3,4>{u_1}-1=2 \times 5-1=9$. On ne peut pas calculer
+  directement $u_n$ à partir de $n$. Par exemple, pour calculer $u_{100}$, il 
+  faut calculer tous les termes qui précèdent.
+  
+  \item Pour toute fonction $g:I \subset \mathbb{R}
+  \to I \subset \mathbb{R}$ et $x \in I$, on peut définir la suite $(u_n)$ par $u_0= x$ et 
+  $u_{n+1}=\uncover<4>{g}(u_n)$.
+  \end{enumerate}
+  
+   \end{example}
+  \end{frame}
+  
+  \section{Suites arithmétiques.}
+  
+  \begin{frame}
+  \begin{definition} 
+    
+   Une suite est \textbf{arithmétique} lorsque l'on passe d'un terme au suivant en ajoutant toujours le même nombre
+   appelé la \textbf{raison}.
+   
+   Autrement dit, une suite $(u_n)_{n \geq p}$ est arithmétique de raison $r$ si et seulement si 
+   pour tout entier $n \geq p$, $u_{n+1}=u_n \uncover<2>{+r}$.
+   \end{definition}
+   
+   \end{frame}
+   
+   \begin{frame}
+   \begin{example}
+    
+  \begin{enumerate}
+   \item La suite des entiers $0,1,2,3,...$ est arithmétique de raison \uncover<2,3,4,5,6,7>{$1$}.
+   \item La suite des entiers pairs $0,2,4,6,...$ est \uncover<3,4,5,6,7,8>{arithmétique}
+   de raison \uncover<4,5,6,7,8>{$2$}.
+   \item La suite des entiers impairs $1,3,5,7,...$ est arithmétique de raison \uncover<5,6,7,8>{$2$}.
+   \item La suite des multiples de 5, $0,5,10,15,...$ est arithmétique de raison \uncover<6,7,8>{$5$}.
+   \item Considérons la suite definie par $u_n=7n+4$ pour tout entier $n$. 
+   $u_{n+1}=7(n+1)+4=7n+7+4=7n+4+7=\uncover<7,8>{u_n}+7$. $u_n$ est arithmétique de raison \uncover<8>{$7$}.
+  \end{enumerate}  
+   \end{example}
+   \end{frame}
+   
+   \begin{frame}
+   \begin{theorem}[Forme explicite d'une suite arithmétique]
+    Soit $(u_n)_{n \geq p}$ une suite arithmétique, pour tout couple d'entiers $(n,p)$,
+    $$u_n=u_p+(\uncover<2>{n-p})r$$
+   \end{theorem}
+   \end{frame}
+   
+        \section{Suites géométriques.}
+        
+        \begin{frame}
+  \begin{definition} 
+    
+   Une suite est \textbf{géométrique} lorsque l'on passe d'un terme au suivant en multipliant toujours 
+   par le même nombre (non nul) appelé la \textbf{raison}.
+   
+   Autrement dit, une suite $(u_n)_{n \geq p}$ est géométrique de raison $q$ si et seulement si 
+   pour tout entier $n \geq p$, $u_{n+1}=u_n \uncover<2>{\times q}$.
+   \end{definition}
+   \end{frame}
+   
+   \begin{frame}
+   \begin{example}
+    
+  \begin{enumerate}
+   \item La suite des puissances de $2$, $1,2,4,8,16,...$ est \uncover<2,3,4,5>{géométrique} de raison $2$.
+   \item La suite des puissances de -1, $u_n=(-1)^n$: $1,-1,1,-1,1,...$ est géométrique de raison 
+   \uncover<3,4,5>{$-1$}.
+   \item la suite $(v_n)_{n \in \mathbb{N}}$ définie pour tout entier $n$ par $v_n=-5 \times 7^n$.
+   $v_{n+1}=-5 (7)^{n+1}=-5(7)^n \times 7=\uncover<4,5>{v_n} \times 7$ et $v_n$ est \uncover<5>
+   {géométrique de raison $7$}.
+  \end{enumerate}  
+   \end{example}
+   \end{frame}
+   
+   \begin{frame}
+   \begin{theorem}[Forme explicite d'une suite géométrique]
+    Soit $(u_n)_{n \geq p}$ une suite géométrique, pour tout couple d'entiers $(n,p)$, 
+    $$u_n=u_p\times q^{(\uncover<2>{n-p})}$$
+   \end{theorem}
+   \end{frame}
+   
+    \section{Sens de variations.}
+  
+  \begin{frame}
+  \begin{definition}
+    
+   Soit $(u_n)_{n \geq k}$ une suite numérique.
+   
+   \begin{itemize}
+    \item $u_n$ est \textbf{croissante} si pour tout entier $n \geq k$, $u_{n+1} \uncover<2,3,4,5,6,7>
+    {\geq} u_n$.
+   \item $u_n$ est \textbf{\uncover<3,4,5,6,7>{strictement} croissante} si pour tout entier $n \geq k$, $u_{n+1} > u_n$.
+   \item $u_n$ est \textbf{\uncover<4,5,6,7>{décroissante}} si pour tout entier $n \geq k$, $u_{n+1} \leq u_n$.
+   \item $u_n$ est \textbf{strictement décroissante} si pour tout entier $n \geq k$, 
+   $u_{n+1} \uncover<5,6,7>{<} u_n$.
+   \item $u_n$ est \textbf{constante} si pour tout entier $n \geq k$, $u_{n+1} \uncover<6,7>{=} u_n$. 
+   \end{itemize}
+  Une suite croissante ou décroissante est dite \textbf{\uncover<7>{monotone}}.
+     
+  \end{definition}
+  \end{frame}
+  
+  \begin{frame}
+   \begin{example}
+    
+    \begin{enumerate}
+     \item La suite des entiers impairs $u_n=1+2n$ est strictement \uncover<2,3,4,5,6>{croissante}. En effet, 
+     $u_{n+1}-u_n=1+2(n+1)-(1+2n)=2>0$
+     \item La suite des inverse $u_n=\frac{1}{n}$ avec $(n>0)$ est strictement décroissante. En effet,
+     $u_{n+1}-u_n=\frac{1}{n+1}-\frac{1}{n}=\frac{\uncover<3,4,5,6>{n}-(\uncover<4,5,6>{n+1})}{n(n+1)}=\frac{-1}{n(n+1)}
+     \uncover<5,6>{<}0$
+     
+     \item La suite $u_n=(-1)^n$ n'est pas \uncover<6>{monotone} car $u_0=1>-1=u_1<1=u_2$
+    \end{enumerate}
+ \end{example}
+ \end{frame}
+ 
+  \subsection{Sens de variation d'une suite arithmétique.}
+ 
+ \begin{frame}
+ \begin{theorem}
+  Soit $(u_n)_{n \geq k}$ une suite arithmétique de raison $r$.
+  \begin{itemize}
+   \item Si $r >0$ alors $(u_n)$ est strictement \uncover<2,3,4>{croissante}.
+   \item Si $r \uncover<3,4>{<} 0$ alors $(u_n)$ est strictement décroissante.
+   \item Si $r=0$ alors $(u_n)$ est \uncover<4>{constante}.
+  \end{itemize}
+ \end{theorem}
+ \end{frame}
+ 
+ \begin{frame}
+ \begin{example}
+    
+    \begin{enumerate}
+     \item La suite $(u_n)$ définie par $u_n=1+3n$ est strictement croissante comme 
+     c'est une suite \uncover<2,3,4,5,6>{arithmétique} de raison $3\uncover<3,4,5,6>{>0}$.
+     \item La suite $(v_n)$ définie par $v_4=7$ et pour tout entier $n \geq 7$
+     , $v_{n+1}=v_n -2$ est strictement \uncover<4,5,6>{décroissante} comme suite arithmétique
+     de raison $r=\uncover<5,6>{-2}\uncover<6>{<0}$.
+    \end{enumerate}
+ \end{example}
+ \end{frame}
+ 
+    \subsection{Sens de variation d'une suite géometrique.}
+
+ \begin{frame}
+ \begin{theorem}
+  Soit $(u_n)_{n \geq k}$ une suite géométrique de raison $q$.
+  \begin{itemize}
+   \item Si $q > 1$ et $u_0>0$ alors $(u_n)$ est strictement \uncover<2,3,4,5,6,7>{croissante}.
+   \item Si $q > 1$ et $u_0\uncover<3,4,5,6,7>{<}0$ alors $(u_n)$ est strictement décroissante.
+   \item Si $q = 1$ alors $(u_n)$ est \uncover<4,5,6,7>{constante}.
+   \item Si $0 < q < 1$ et $u_0\uncover<5,6,7>{>}0$ alors $(u_n)$ est strictement décroissante.
+   \item Si $0 < q < 1$ et $u_0<0$ alors $(u_n)$ est strictement \uncover<6,7>{croissante}.
+   \item Si $q < 0$ et $u_0 \neq 0$ alors $(u_n)$ \uncover<7>{n'est pas monotone}.
+  \end{itemize}
+ \end{theorem}
+ \end{frame}
+ 
+ \begin{frame}
+ \begin{example}
+    
+    \begin{enumerate}
+     \item La suite $(u_n)_{n \geq 0}$ définie par $u_n=4(\frac{2}{3})^n$ est strictement décroissante comme 
+     c'est une suite géométrique de premier terme \uncover<2,3,4,5>{$4>0$} et de raison 
+     \uncover<3,4,5>{$0<\frac{2}{3}<1$}.
+     \item La suite $(v_n)$ définie par $v_4=-2$ et pour tout entier $n \geq 5$
+     , $v_{n+1}=v_n \times 3$ est \uncover<4,5>{strictement} décroissante comme suite géométrique de premier
+     terme $-2<0$ et de raison $3>1$.
+     \item La suite $(w_n)_{n \geq 0}$ géométrique de raison $-2$ avec $w_0=3$  \uncover<5>{n'est pas monotone}. En effet,
+     $w_0$. En effet, $w_0=3>-6=w_1<w_2=12$.
+    \end{enumerate}
+ \end{example}
+ \end{frame}
+ 
+ \subsection{Sens de variation d'une suite définie de façon explicite.}
+ 
+ \begin{frame}
+  \begin{theorem}
+  Soit $f:[k,+\infty[ \to \mathbb{R}$ et $(u_n)_{n \geq k}$ la suite définie par $u_n=f(n)$.
+  \begin{itemize}
+   \item Si $f$ est (resp. strictement) croissante alors $(u_n)$ est (resp. strictement) 
+   \uncover<2,3>{croissante}.
+   \item Si $f$ est (resp. strictement) \uncover<3>{décroissante}
+   alors $(u_n)$ est (resp. strictement) décroissante.
+ \end{itemize}
+ \end{theorem}
+ \end{frame}
+ 
+ \begin{frame}
+ \begin{example}
+ La suite $(u_n)_{n \geq 1}$ définie par $u_n=\frac{1}{n^2}$ est \uncover<2,3>{strictement décroissante} comme 
+     la fonction $f:]0,+\infty[$,$x \mapsto \uncover<3>{\frac{1}{x^2}}$ est strictement décroissante.
+\end{example}
+\end{frame}
+
+\begin{frame}
+\begin{remark}
+ Ne pas confondre avec le cas d'une fonction définie par récurrence.
+ \begin{itemize}
+  \item La suite $(u_n)$ défine explicitement par $u_n=2n-1$ est strictement croissante comme la fonction 
+ $f:x \mapsto 2x-1$ est \uncover<2,3>{strictement croissante} et $u_n=f(n)$.
+ \item Mais la suite $(v_n)$ définie par récurrence par $v_0=0$ et pour tout entier $n$, $v_{n+1}=f(v_n)=2 v_n-1$ 
+ \uncover<3>{n'est pas strictement croissante}. En effet, $v_0=0$, $v_1=-1$, $v_2=2(-1)-1=-3$. 
+ \end{itemize}
+\end{remark}
+\end{frame} 
+
+\end{document}

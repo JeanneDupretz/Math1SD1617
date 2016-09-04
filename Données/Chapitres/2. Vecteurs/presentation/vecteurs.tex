@@ -1,0 +1,665 @@
+\documentclass{beamer}
+
+%\documentclass{article}
+%\usepackage{beamerarticle}
+
+\usepackage[utf8]{inputenc}
+
+%\usetheme{Warsaw}
+%\usetheme{Hannover}
+\usetheme{Berkeley}
+%\usecolortheme{lily}
+\setbeamertemplate{theorems}[numbered] 
+%\setbeamertemplate{theorems}[ams style]
+\date{}
+
+%\theoremstyle{plain}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{tikz,tkz-tab}
+
+\uselanguage{French}
+\languagepath{French}
+
+\newtheorem{proposition}[theorem]{\translate{Proposition}}
+%\newtheorem{example}[theorem]{\translate{Example}}
+\newtheorem{demonstration}[theorem]{Démonstration}
+
+\title{Vecteurs et équations de droites}
+
+
+\begin{document}
+  
+  \begin{frame}
+    
+    \titlepage
+   % \maketitle
+    
+  \end{frame}
+  
+  
+    
+  \section{Vecteurs du plan}
+  
+  \subsection{Colinéarité}
+  \begin{frame} 
+  
+  \begin{definition}    
+    Deux vecteurs $\vec{u}$ et $\vec{v}$ sont \textbf{colinéaires} si et seulement si il existe 
+    un réel \uncover<2,3,4>{$k$} tel que $\vec{u}=\uncover<3,4>{k\vec{v}}$ ou 
+    \uncover<4>{$\vec{v}=k\vec{u}$}.
+  \end{definition}
+  
+  \end{frame}
+  
+  
+  \begin{frame}
+    \begin{example}
+    \begin{center}
+   \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    \node [above] at (-4,2) {$\vec{u}$};
+    \draw[very thick,->](-5.5,1.5)--(-2.5,2.5);
+    \node [above] at (-2.75,1.25) {$\vec{v}$};
+    \draw[very thick,->](-2,1.5)--(-3.5,1);
+    \draw[very thick,->](0,1)--(0.5,3);
+    \draw[thin,-](-0.25,0)--(0.625,3.5);
+    \draw[thin,-](0.5,0)--(1.375,3.5);
+    \draw[very thick,->](1,2)--(0.625,0.5);
+    \node [left] at (0.1875,1.75) {$\vec{CD}$};
+    \node [right] at (1,1) {$\vec{AB}$};
+    \node [right] at (2,2) {$(AB) \slash{} \slash{} (CD)$};
+    %\draw[very thick,->](-5.9,0.4)--(-0.5,3.9);
+    %\draw[thick][domain=-2.9:1.1] plot (\x,{(\x+1)*(\x+1)-1.5});
+    %(\x -0.5*(\x-3)(\x-3)+2);
+    
+   \end{tikzpicture}
+      \begin{tabular}{p{5cm}p{4.7cm}}
+$\vec{u}=\uncover<2,3>{-2} \vec{v}$
+&
+ $\vec{AB}=\uncover<3>{-\frac{AB}{CD}\vec{CD}}$
+\end{tabular}
+   \end{center}
+   
+  \end{example}
+  \end{frame}
+  
+  \subsection{Décomposition de vecteur}
+    
+  \begin{frame}
+    
+  \begin{theorem}
+    Tout vecteur du plan peut s'exprimer en fonction de deux vecteurs non colinéaires.
+    
+    Autrement dit,
+    si $\vec{v}$ et $\vec{w}$ sont deux vecteurs non colinéaires alors pour tout vecteur $\vec{u}$,
+    il existe un unique couple de réels $(a,b)$ tel que $\vec{u}=a\vec{v}+b\vec{w}$.
+    
+  \end{theorem}
+  
+    
+  \end{frame}  
+  
+   \begin{frame}
+    \begin{example}
+    
+    \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    \uncover<2,3,4,5>{\draw[semithick,-](-5.8,0.4)--(-1.6,1.8);}
+    \uncover<3,4,5>{\draw[dashed,semithick,-](-5.8,2.4)--(-1.6,3.8);}
+    \uncover<2,3,4,5>{\draw[thick,-](-2.5,0.4)--(-2.5,3.9);}
+    \uncover<3,4,5>{\draw[dashed,thick,-](-5.5,0.4)--(-5.5,3.9);}
+    \node [right] at (-2.5,1) {$\vec{v}$};
+    \draw[ultra thick,->](-2.5,1.5)--(-2.5,0.5);
+    \uncover<4,5>{\draw[ultra thick,->](-2.5,1.5)--(-2.5,3.5);}
+    \uncover<4,5>{\node [right] at (-2.5,2.5) {$-2 \vec{v}$};}
+    \node [below] at (-3.275,1.25) {$\vec{w}$};
+    \draw[very thick,->](-2.5,1.5)--(-4,1);
+    \uncover<5>{\draw[very thick,->](-2.5,1.5)--(-5.5,0.5);}
+    \node [above] at (-4,2) {$\vec{u}$};
+    \draw[very thick,->](-2.5,1.5)--(-5.5,2.5);
+    \draw[very thick,->](2,1)--(4,1);
+    \draw[very thick,->](2,1)--(3,3);
+    \draw[thin,-](0,1)--(4.3,1);
+    %\draw[thin,-](0.5,0)--(1.375,3.5);
+    \node [below] at (2,1) {$A$};
+    \node [below] at (4,1) {$B$};
+    \node [below] at (1,1) {$C$};
+    \node [below] at (3,1) {$D$};
+    \node [above] at (3,3) {$E$};
+    \draw[very thick,-](2,0.9)--(2,1.1);
+    \draw[very thick,->](2,1)--(1,1);
+    \draw[very thick,-](3,0.9)--(3,1.1);
+    
+    
+    
+    
+    
+   \end{tikzpicture}
+   
+    \begin{tabular}{p{4.7cm}|p{4.7cm}}
+$\vec{u}=\uncover<4,5>{-2 }\vec{v}+\uncover<5>{2} \vec{w}$
+&
+ $\vec{AD}$
+ 
+ $=0 \vec{AB}+(-1)\vec{AC}$
+ 
+ $=1 \vec{AB}+1\vec{AC}$
+\end{tabular}
+
+    
+  \end{example}
+  \end{frame}
+  
+  \subsection{Repères du plan}
+  
+  \begin{frame}
+   \begin{definition}
+      Un \textbf{repère} du plan est la donnée d'un point $O$, appelé origine du repère, et de deux vecteurs
+      $\vec{i}$ et $\vec{j}$ non colinéaires. Il se note $(O,\vec{i},\vec{j})$.
+   \end{definition}
+   
+   \end{frame}
+  
+  \begin{frame}
+   \begin{example}
+    
+     \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    \node [below] at (-4,1.5) {$O$};
+    \node [below] at (-3.5,1.5) {$\vec{i}$};
+    \node [left] at (-4,2) {$\vec{j}$};
+    \draw[very thick,->](-4,1.5)--(-3,1.5);
+    \draw[very thick,->](-4,1.5)--(-4,2.5);
+    \node [right] at (3,1.5) {$A$};
+    \draw[very thick,->](3,1.5)--(0.5,1);
+    \node [left] at (0.5,1) {$B$};
+    \draw[very thick,->](3,1.5)--(0,2.5);
+    \node [left] at (0,2.5) {$C$};
+ 
+    
+   \end{tikzpicture}
+   
+   \begin{tabular}{p{4.7cm}|p{4.7cm}}
+$(O,\vec{i},\vec{j})$ est un repère 
+
+\uncover<2>{orthonormé}.
+&
+ $(A;\vec{AB},\vec{AC})$ est un repère quelconque.
+\end{tabular}
+   
+   
+   \end{example}
+  
+  \end{frame}
+
+  \subsection{Systèmes de coordonnées}
+  
+  \begin{frame}
+   \begin{proposition}
+    \'Equivalence fondamentale: 
+    
+    Un point $M$ du plan a pour coordonnées $(x;y)$ dans le repère $(O;\vec{i},\vec{j})$
+    
+    si et seulement si $\vec{OM}$ a pour coordonnées $(x;y)$ 
+
+    si et seulement si $\vec{OM}=x \vec{i}+y \vec{j}$.
+  
+   \end{proposition}
+
+
+  \end{frame}
+  
+  \begin{frame}
+   \begin{example}
+    
+    \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    \draw[very thick,-](-3,2.9)--(-3,3.1);
+    \draw[very thick,-](-2.9,3)--(-3.1,3);
+    \node [above] at (-3,3) {$M$};
+    \node [below] at (-4,1.5) {$O$};
+    \node [below] at (-3.5,1.5) {$\vec{i}$};
+    \node [left] at (-4,2) {$\vec{j}$};
+    \draw[very thick,->](-4,1.5)--(-3,1.5);
+    \draw[very thick,->](-4,1.5)--(-4,2.5);
+    
+    \node [right] at (3,1.5) {$A$};
+    \draw[very thick,-](3,1.5)--(0.5,1);
+    \node [left] at (0.5,1) {$B$};
+    \draw[very thick,-](3,1.5)--(0,2.5);
+    \node [left] at (0,2.5) {$C$};
+    \draw[very thick,-](0.5,1)--(0,2.5);
+    \draw[very thick,-](0.15,1.75)--(0.35,1.75);
+    \node [left] at (0.25,1.75) {$I$};
+    \draw[thin,-](0.25,1.75)--(1.5,2);
+    \draw[thin,-](0.25,1.75)--(1.75,1.25);
+    \node [above] at (1,3) {$I$ est le milieu de $[BC]$.};
+    
+   \end{tikzpicture}
+   
+     \begin{tabular}{p{4.7cm}|p{4.7cm}}
+  $M$ a pour coordonnées $M(\uncover<2,3>{1};\uncover<2,3>{1,5})$ dans le repère $(0;\vec{i},\vec{j})$.
+&
+  $\vec{AI}= \frac{1}{2} \vec{AB}+\frac{1}{2} \vec{AC}$ et 
+   $I(\uncover<3>{\frac{1}{2}};\uncover<3>{\frac{1}{2}})$ dans le repère
+   $(A;\vec{AB},\vec{AC})$.
+\end{tabular}
+
+    
+   \end{example}
+
+  \end{frame}
+  
+  \subsection{Critère de colinéarité}
+  
+  \begin{frame}
+  
+  \begin{proposition}
+   Soient $\vec{u}$ et $\vec{u'}$ deux vecteurs de coordonnées $\vec{u}(x;y)$ et $\vec{u'}=(x';y')$
+   dans un repère.
+   
+   \begin{center}
+      $\vec{u}$ et $\vec{u'}$ sont colinéaires si et seulement si $xy'-x'y=0$.
+   \end{center}
+
+   
+  \end{proposition}
+  \end{frame}
+  
+  \begin{frame}
+   
+   \begin{example}
+
+    Soit $(O;\vec{i},\vec{j})$ un repère. Les vecteurs suivants sont-ils colinéaires ? 
+   
+   \begin{tabular}{p{4.7cm}|p{4.7cm}}
+   
+   
+$\vec{u}(1;2)$ et $\vec{v}(2;4)$
+
+\uncover<2,3,4,5>{$1 \times 4- 2 \times 2 = 0$}
+
+\uncover<3,4,5>{$\vec{u}$ et $\vec{v}$ sont colinéaires}.
+
+& 
+
+$\vec{w}(2;3)$ et $\vec{z}(5;7)$
+
+\uncover<4,5>{$2 \times 7- 3 \times 5 = 14-15=-1$}
+
+\uncover<5>{$\vec{w}$ et $\vec{z}$ ne sont pas colinéaires}.\\
+ \\
+
+\end{tabular}
+
+\end{example}
+
+\end{frame}
+
+
+  \section{Droites et vecteurs directeurs}
+  
+  \subsection{Vecteurs directeurs d'une droite}
+  
+  
+  
+
+
+    \begin{frame}
+   \begin{definition}
+    
+   On dit qu'un vecteur $\vec{v}$ est un \textbf{vecteur directeur} d'une droite $\mathcal{D}$ si il existe
+   deux points $A$ et $B$ de $\mathcal{D}$ tels que $\vec{v}=\uncover<2>{\vec{AB}}$.
+  \end{definition}
+  \end{frame}
+  
+  \begin{frame}
+  
+   \begin{example}
+    
+      \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    
+    \node [above] at (-3,3) {$B$};
+    \node [below] at (-4,1.5) {$A$};
+    
+    
+    \uncover<2,3,4,5,6,7,8>{\draw[very thick,|->](-4,1.5)--(-3,3);}
+    \uncover<1>{\draw[thin,|-|](-3,3)--(-4,1.5);}
+    \draw[thin,-](-2.4,3.9)--(-4.73,0.4);
+    
+    \node [below] at (3,1.5) {$C$};
+    \node [above] at (2.7,1.8) {$\vec{u}$};
+    \uncover<5,6,7,8>{\node [above] at (1,2.17) {$\mathcal{D}$};}
+    
+    \draw[very thick,|->](3,1.5)--(2,1.83);
+    \uncover<5,6,7,8>{\draw[thin,-](-1,2.83)--(4,1.17);}
+    
+   \end{tikzpicture}
+    
+     \begin{tabular}{p{4.7cm}|p{4.7cm}}
+   
+\uncover<3,4,5,6,7,8>{Le vecteur }\uncover<4,5,6,7,8>{$\vec{AB}$} 
+\uncover<3,4,5,6,7,8>{ est un vecteur directeur de la droite $(AB)$.}
+
+& 
+
+\uncover<6,7,8>{$\mathcal{D}$ est la droite passant par le point} \uncover<7,8>{$C$} 
+\uncover<6,7,8>{et dirigée
+par le vecteur} \uncover<8>{$\vec{u}$}\uncover<6,7,8>{.}
+
+
+\end{tabular}
+    
+   \end{example}
+   
+   \end{frame}
+   
+   \begin{frame}
+     \begin{proposition}
+   Soit $\mathcal{D}$ une droite de vecteur directeur $\vec{u}$.
+   
+   Les vecteurs directeurs de $\mathcal{D}$ sont tous les vecteurs non nuls colinéaires à \uncover<2>{$\vec{u}$}.
+  \end{proposition}
+   
+   \end{frame}
+   
+     \begin{frame}
+  
+   \begin{example}
+    
+      \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    
+    \node [above] at (-3,3.1) {$B$};
+    \node [above] at (-4.4,1.6) {$A$};
+    
+    
+    \draw[very thick,|->](-4,1.5)--(-3,3);
+    \uncover<2>{\draw[very thick,|->](-4.1,1.35)--(-4.5,0.75);}
+    \uncover<3>{\draw[very thick,|->](-3.5,2.25)--(-3.25,2.63);}
+    \uncover<4>{\draw[very thick,|->](-2.8,3.3)--(-2.53,3.7);}
+    \uncover<5>{\draw[very thick,|->](-3.8,3.3)--(-3.53,3.7);}
+
+
+    %\node [above] at (-3.25,2.73) {$C$};
+    %\draw[very thick,->](-4,1.5)--(-2.3,4.05);
+    %\draw[very thick,->](-4,1.5)--(-3.5,2.25);
+    %\draw[very thick,->](-4,1.5)--(-4.25,1.13);
+    
+    \draw[thin,-](-2.4,3.9)--(-4.73,0.4);
+    \draw[thin,-](-2.4,3.9)--(-4.73,0.4);
+      
+    \node [below] at (3,1.5) {$C$};
+    \node [above] at (2.7,1.8) {$\vec{u}$};
+    \node [above] at (1,2.17) {$\mathcal{D}$};
+    
+    \draw[very thick,|->](3,1.5)--(2,1.83);
+    \uncover<6>{\draw[very thick,|->](1,2.16)--(-1,2.82);}
+    \uncover<7>{\draw[very thick,|->](3.3,1.4)--(3.6,1.3);}
+    \draw[thin,-](-1,2.83)--(4,1.17);
+    
+   \end{tikzpicture}
+   
+   \end{example}
+   
+   \end{frame}
+   
+   \subsection{Parallélisme et vecteurs directeurs}
+   
+   \begin{frame}
+   \begin{theorem}
+    Deux droites sont parallèles si et seulement si elles ont
+    des vecteurs directeurs \uncover<2,3>{colinéaires}.
+    
+    Aurement dit, $\mathcal{D}$ et $\mathcal{D}'$ de vecteurs directeurs respectifs $\vec{u}$
+    et $\vec{u}'$ sont parallèles si et seulement si \uncover<3>{$\vec{u}$} et \uncover<3>{$\vec{u}'$} sont colinéaires.
+   \end{theorem}
+
+
+  \end{frame}
+
+       \begin{frame}
+  
+   \begin{example}
+    
+      \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    
+    \node [below] at (-3,2.9) {$B$};
+    \node [below] at (-4,1.5) {$A$};
+    
+    \uncover<3,4,5,6,7,8>{\node [above] at (-3.25,3.37) {$C$};}
+    \uncover<3,4,5,6,7,8>{\node [above] at (-3.75,2.72) {$D$};}
+    
+    
+    \draw[very thick,|->](-4,1.5)--(-3,3);
+    \uncover<3,4,5,6,7,8>{\draw[very thick,|->](-3.25,3.37)--(-3.75,2.62);}
+    \draw[thin,-](-2.4,3.9)--(-4.73,0.4);
+    \uncover<2,3,4,5,6,7,8>{\draw[thin,-](-2.9,3.9)--(-5.23,0.4);}
+    
+    \node [below] at (3,1.5) {$C$};
+    \node [above] at (2.7,1.8) {$\vec{u}$};
+    \uncover<6,7,8>{\node [above] at (2.7,2.8) {$\mathcal{D}'$};}
+    \node [above] at (1,2.17) {$\mathcal{D}$};
+    \uncover<6,7,8>{\node [above] at (1,3.15) {$\vec{u'}$};}
+    
+    \draw[very thick,|->](3,1.5)--(2,1.83);
+    \draw[thin,-](-1,2.83)--(4,1.17);
+    \uncover<6,7,8>{\draw[very thick,|->](0,3.49)--(2,2.83);}
+    \uncover<6,7,8>{\draw[thin,-](-1,3.83)--(4,2.17);}
+    
+   \end{tikzpicture}
+   
+        \begin{tabular}{p{4.7cm}|p{4.7cm}}
+   
+\uncover<4,5,6,7,8>{La droite $(AB)$ est parallèle à la droite $(CD)$
+
+si et seulement si ($\iff$) 
+
+le vecteur $\vec{AB}$ est} \uncover<5,6,7,8>{colinéaire}
+\uncover<4,5,6,7,8>{au vecteur $\vec{CD}$.}
+
+& 
+
+\uncover<7,8>{Les droites $\mathcal{D}$ et $\mathcal{D}'$ sont parallèles si et seulement si
+les vecteur $\vec{u}$ et $\vec{u}$ sont }\uncover<8>{colinéaires}\uncover<7,8>{.}
+
+\end{tabular}
+   
+   \end{example}
+   \end{frame}
+   
+   %\iffalse
+   
+      \subsection{Appartenance d'un point à une droite}
+ 
+  
+ 
+   \begin{frame}
+   
+   
+   \begin{proposition}
+    Un point $M$ appartient à la droite passant par $A$ et de vecteur directeur $\vec{u}$
+    si et seulement si le vecteur \uncover<2>{$\vec{AM}$} est colinéaire au vecteur $\vec{u}$.
+   \end{proposition}
+
+
+  \end{frame}
+
+  \begin{frame}
+  
+  \begin{example}
+  
+
+       \begin{tikzpicture}
+    
+    \draw[step=0.5cm,gray,very thin](-5.9,0.4) grid (-1.6,3.9);
+    
+    \node [above] at (-3,3) {$B$};
+    \node [right] at (-4,1.5) {$A$};
+    \uncover<2,3,4,5,6>{\node [left] at (-4.5,0.75) {$M$};}
+    
+    
+    \draw[very thick,|->](-4,1.5)--(-3,3);
+    \uncover<2,3,4,5,6>{\draw[very thick,->](-4,1.5)--(-4.5,0.75);}
+    \draw[thin,-](-2.4,3.9)--(-4.73,0.4);
+    
+    \node [below] at (3,1.5) {$C$};
+    \node [above] at (2.7,1.8) {$\vec{u}$};
+    \uncover<4,5,6>{\node [above] at (1,2.17) {$M$};}
+    
+    \draw[very thick,|->](3,1.5)--(2,1.83);
+    \uncover<4,5,6>{\draw[very thick,->](3,1.5)--(1,2.16);}
+    \draw[thin,-](-1,2.83)--(4,1.17);
+    
+   \end{tikzpicture}
+   
+\begin{tabular}{p{4.7cm}|p{4.7cm}}
+Les points $A$, $B$ et $M$ sont alignés si et seulement si
+\uncover<3,4,5,6>{$\vec{AM}$} est colinéaire au vecteur $\vec{AB}$.
+&
+Le point $M$ appartient à la droite passant par le point $C$ et dirigée par $\vec{u}$
+si et seulement si le vecteur \uncover<5,6>{$\vec{CM}$} est colinéaire au vecteur \uncover<6>{$\vec{u}$}.
+\end{tabular}
+  \end{example}
+\end{frame}
+   
+   \section{\'Equations de droites}
+   
+   
+   
+   \subsection{\'Equation cartésienne de droite}
+   
+    \begin{frame}
+    
+    Jusqu'à la fin de ce cours, le plan est rapporté à un repère $(O;\vec{i},\vec{j})$.
+    
+   \begin{theorem}
+
+    Soient $a,b,c$ trois réels tels que l'un au moins des nombres $a$ et $b$ est non nul.
+    
+    L'ensemble des points $M(x;y)$ dont les coordonnées vérifient l'équations
+    $$ax+by+c=0$$ est une droite $\mathcal{D}$ de vecteur directeur $\vec{u}\uncover<2>{(-b;a)}$.
+    
+    L'équation $ax+by+c=0$ est appelée une \textbf{équation cartésienne} de la droite $\mathcal{D}$.
+   
+   \end{theorem}
+
+  \end{frame}
+   
+   \begin{frame}
+   
+     \begin{theorem}
+
+    Soient $a,b$ deux réels tels que l'un au moins des nombres $a$ et $b$ est non nul.
+    
+    Toute droite du plan de vecteur directeur $\vec{u}(-b;a)$ admet une équation de la forme 
+    $$ax+by+c=0, \textrm{avec $c \in \mathbb{R}$}$$
+   
+   \end{theorem}
+
+  \end{frame}
+  
+  \begin{frame}
+  \begin{demonstration}
+    
+    Soit $\mathcal{D}$ une droite de vecteur directeur $\vec{u}(-b;a)$ et $A(x_A;y_A)$ un point de 
+    $\mathcal{D}$. Soit $M(x;y)$ un point du plan.
+    
+    $M \in \mathcal{D}$
+    
+    $\iff \uncover<2,3,4,5,6>{\vec{AM}}(\uncover<3,4,5,6>{x-x_A};\uncover<3,4,5,6>{y-y_A}) 
+    \textrm{ est colinéaire à } \uncover<2,3,4,5,6>{\vec{u}(-b;a)}$
+    
+    $\iff (x-x_A)\times \uncover<4,5,6>{a} -\uncover<5,6>{(y-y_A)} \times (-b)=0$ 
+    
+    $\iff ax+by+c=0 \textrm{ en posant }c=\uncover<6>{-ax_A-by_A}$.
+    
+    La droite $\mathcal{D}$ admet donc bien une équation de la forme $ax+by+c=0$.
+   \end{demonstration}
+   
+   \end{frame}
+  
+       \begin{frame}
+    
+   \begin{example}
+    Soit $\mathcal{D}:2 x+3 y-4=0$
+      \begin{tikzpicture}[scale=0.5]
+    
+    \draw[step=1cm,gray,very thin](-10,-3) grid (10,5);
+    
+    \draw[very thick,->](0,0)--(1,0);
+    \draw[very thick,->](0,0)--(0,1);
+    \draw[thick,-](-5.5,5)--(6.5,-3);
+    \node [left] at (-4,3.8) {$A$};
+    \node [left] at (-1,1.8) {$B$};
+    \node [left] at (0,-0.4) {$O$};
+    \node [below] at (0.5,0) {$\vec{i}$};
+    \node [left] at (0,0.5) {$\vec{j}$};
+    
+    \draw[very thick,|-|](-1,2)--(-4,4);
+    \draw[very thick,|->](5,-2)--(2,0);
+    \draw[very thick,-](5,-2)--(2,-2);
+    \draw[very thick,-](2,-2)--(2,0);
+    
+   \end{tikzpicture}
+   
+   $6x+9y-12=0$ est aussi une équation pour $\mathcal{D}$.
+   
+   $A(-4;4) \in \mathcal{D} \iff \uncover<2,3,4,5,6>{2(-4)+3(4)-4=0} \iff \uncover<3,4,5,6>{0=0}$
+   
+   
+   $B(-1;2) \in \mathcal{D} \iff \uncover<4,5,6>{2(-1)+3(2)-4=0} \iff \uncover<5,6>{0=0}$
+   
+  
+   $\vec{BA}(-4-(-1),4-2)=(-3;2)$ est un \uncover<6>{vecteur directeur} de $\mathcal{D}$.
+   \end{example}
+   
+   \end{frame}
+  
+  \subsection{\'Equation réduite de droite}
+
+  \begin{frame}
+   
+     \begin{theorem}
+     
+     \begin{itemize}
+      \item 
+      $\mathcal{D}$ est une droite du plan non parallèle à l'axe des ordonnées si et seulement si
+    $\mathcal{D}$ admet une \uncover<2,3,4,5>{unique} équation réduite de la forme $y=mx+p$, où $m$ et $p$ sont des réels.
+    
+    Un vecteur directeur de $\mathcal{D}$ est $\vec{u}\uncover<3,4,5>{(1;m)}$, où $m$ est le coefficient directeur
+    de la droite.
+    
+    \item
+    $\mathcal{D}$ est une droite du plan parallèle à l'axe des ordonnées si et seulement si
+    $\mathcal{D}$ admet une unique équation réduite de la forme \uncover<4,5>{$x=k$}, où $k$ est un réel.
+    
+    Un vecteur directeur de $\mathcal{D}$ est $\vec{j}(0;1)$.
+    
+    \item Deux droites non parallèles à l'axe des ordonnées sont parallèles si et seulement si 
+    elles ont même \uncover<5>{coefficient directeur}.
+     \end{itemize}
+     
+   \end{theorem}
+
+  \end{frame}
+  
+\end{document}
+
+$\begin{pmatrix}
+     x\\
+     y
+    \end{pmatrix}$

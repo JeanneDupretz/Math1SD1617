@@ -1,0 +1,16 @@
+1. Aller sur le site \href{https://github.com/}{www.GitHub.com}
+1. Effectuer une recherche en utilisant le mot clé edisonlorgues.
+1. Explorer l'organisation [EdisonLorgues1SD1617](https://github.com/EdisonLorgues1SD1617).
+1. Explorer le dépot [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Math1SD1617).
+1. Prendre connaissance du [cahier de textes](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Cahier%20de%20textes/readme.md) et des devoirs qui y sont écrits.
+1. Parcourir les membres de l'organisation [EdisonLorgues1SD1617](https://github.com/EdisonLorgues1SD1617).
+1. Prendre note du compte qui a été créé à votre nom.
+1. Ouvrir une session avec le compte à votre nom.
+1. Ouvrir le menu Settings/account accessible depuis en haut à droite.
+1. Modifier le mot de passe de votre compte.
+1. Ajouter une adresse mail de votre choix à votre compte.
+1. Valider ses modifications en commentant l'issue prévue à cette effet sur le dépôt [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Math1SD1617)..
+1. Créer un dépôt du nom de Devoirs associer à votre compte.
+Attention à bien cocher la case pour la création du fichier d’accueil:
+Initialize this repository with a README.
+1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [Devoirs](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).

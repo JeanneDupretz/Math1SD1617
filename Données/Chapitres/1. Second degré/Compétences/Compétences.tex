@@ -1,0 +1,150 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{pdflscape}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{fourier} % math & rm
+%\usepackage{amsthm,amsfonts,amsmath,amssymb,textcomp}
+\usepackage{pst-all,pstricks-add,pst-eucl}
+\everymath{\displaystyle}
+\usepackage{fp,ifthen}
+%\usepackage{color}
+%\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{variations}
+\usepackage{enumerate}
+\usepackage{pifont}
+\usepackage{framed}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage[framed]{ntheorem}
+\usepackage{multicol}
+\usepackage{kpfonts}
+\usepackage{manfnt}
+
+%\usepackage[hmargin=2.5cm, vmargin=2.5cm]{geometry}
+\usepackage{vmargin}          % Pour fixer les marges du document
+\setmarginsrb
+{1.5cm} 	%marge gauche
+{0.5cm} 	  %marge en haut
+{1.5cm}     %marge droite
+{0.5cm}   %marge en bas
+{1cm} 	%hauteur de l'entête
+{0.5cm}   %distance entre l'entête et le texte
+{1cm} 	  %hauteur du pied de page
+{0.5cm}     %distance entre le texte et le pied de page
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+%\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\e}{\text{e}}
+\newcommand{\dx}{\text{d}x}
+\newcommand{\vect}[1]{\mathchoice%
+  {\overrightarrow{\displaystyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\textstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptscriptstyle\mathstrut#1\,\,}}}
+\newcommand\arraybslash{\let\\\@arraycr}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\renewcommand{\and}{\wedge}
+
+\theoremstyle{break}
+\theorembodyfont{\upshape}
+\newframedtheorem{Theo}{Théorème}
+\newframedtheorem{Prop}{Propriété}
+\newframedtheorem{Def}{Définition}
+
+\newtheorem{Term}{Terminologie}
+\newtheorem{Rq}{Remarque}
+\newtheorem{Ex}{Exemple}
+%\newtheorem{exo}{Exercice}
+
+%\theorembodyfont{\small \sffamily}
+%\newtheorem{sol}{solution}
+
+\newenvironment{sol}% 
+{\def\FrameCommand{\hspace{0.5cm} {\color{black} \vrule width 1pt} \hspace{-0.7cm}}%
+  \framed {\advance\hsize-\width}
+  \noindent \small \sffamily  %\underline{Solution :}%\\
+}%
+{\endframed}
+
+\newrgbcolor{vert}{0 0.4 0}
+\newrgbcolor{bistre}{1 .50 .30}
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+
+\everymath{\displaystyle}
+\hyphenpenalty 10000 %supprime toutes les césures
+%\setcounter{secnumdepth}{0}
+%\newcounter{saveenum}
+
+\usepackage[frenchb]{babel}
+\usepackage{fancyhdr,lastpage}
+\usepackage{fancybox}
+
+%\headheight 15.0 pt
+\fancyhead[L]{}
+\fancyhead[C]{Compétences second degré.}
+\fancyhead[R]{}
+\fancyfoot[L]{{\scriptsize\textsl{Thomas Gire Cité scolaire de Lorgues}}}
+%\fancyfoot[C]{\scriptsize\thepage}
+%\fancyfoot[C]{\scriptsize\thepage/\pageref{LastPage}}
+
+\title{}
+\author{}
+\date{}
+
+%\pagestyle{empty}
+\pagestyle{fancy}
+\usepackage[np]{numprint}
+
+\renewcommand\arraystretch{1.8}
+
+\newcounter{numero}
+\newcommand{\exo}{
+  \addtocounter{numero}{1}%
+  \textbf{\underline{Exercice \arabic{numero}:}}\quad}
+
+\frenchbsetup{StandardEnumerateEnv=true}
+\usepackage{etex}
+\usepackage{tikz,tkz-tab}
+
+\begin{document}
+  \setlength{\unitlength}{1mm}
+  \setlength\parindent{0mm}
+  
+  
+  %\exo
+  ~
+  \medskip
+  
+  \begin{enumerate}
+    \item Mettre un trinôme sous la forme développée réduite.
+    \item Calculer les coordonnées du sommet d'une parabole.
+    \item Réaliser le tableau de variations d'un trinôme.
+     $\to$ une méthode: appliquer le théorème correspondant. 
+    \item Trouver le nombre de racines d'un trinôme.
+    \item Calculer les racines d'un trinôme.
+    \item Mettre un trinôme sous forme factorisée.
+    \item Résoudre une équation du second degré.
+    \item Résoudre une inéquation du second degré.
+    \item Savoir déterminer le signe des paramètres $\alpha$, $\beta$, $\Delta$, $a$, $c$ 
+    d'un trinôme à l'aide de son graphe.    
+    \item Mettre un trinôme sous forme canonique.
+    \item Savoir étudier un trinôme avec un paramètre. 
+    
+  \end{enumerate}
+
+  
+  
+\end{document}
