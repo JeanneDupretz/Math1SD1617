@@ -1,2 +1,1 @@
-# Math1SD1617
-Le dépôt pour le cours de mathématiques de la classe de première SD  2016/2017
+# [Cahier de textes](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Cahier%20de%20textes/readme.md)
