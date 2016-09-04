@@ -1,8 +1,8 @@
-<!-- Ceci n'est pas écrit
+Ceci n'est pas écrit
 
 Mardi 6 septembre 2016
 
-1. Activité intéractive [Géogebra](https://www.geogebra.org/apps): Typologie des variations et du signe d'un trinôme du second degré.
+1. Activité intéractive [Géogebra](https://www.geogebra.org/apps): Différents types possibles pour les variations et le signe d'un trinôme du second degré.
 
 1. Présentation sur le [second degré ](https://github.com/EdisonLorgues1SD1617/math1sd1617/raw/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Pr%C3%A9sentation/secondDegre.pdf) Définition 1: trinôme, forme développée et paraboles.
 
@@ -10,13 +10,13 @@ Mardi 6 septembre 2016
 
 1. Théorème 3: forme canonique et variations.
 
-1. Exemple 4: Signe de a et orientation de parabole -->
+1. Exemple 4: Signe de a et orientation de parabole
 
 Lundi 5 septembre 2016 (En salle informatique)
 
 1. [Activité de prise en main du dépôt GitHub du cours de mathématique.](https://github.com/EdisonLorgues1SD1617/Math1SD1617/tree/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Activit%C3%A9s/GitHub)
 
-1. [Activité 2 page 23](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Images/2p23.png): Réaliser une typologie pour les paraboles en utilisant [géogebra en ligne](https://www.geogebra.org/apps).
+<!-- 1. [Activité 2 page 23](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Images/2p23.png): Réaliser une typologie pour les paraboles en utilisant [géogebra en ligne](https://www.geogebra.org/apps). -->
 
 ***
 
