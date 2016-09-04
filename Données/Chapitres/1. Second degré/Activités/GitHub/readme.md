@@ -10,7 +10,7 @@
 1. Modifier le mot de passe de votre compte.
 1. Ajouter une adresse mail de votre choix à votre compte.
 1. Valider ces modifications en commentant l'issue prévue à cette effet sur le dépôt [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Math1SD1617/issues/1).
-1. Créer un dépôt du nom de Devoirs associer à votre compte.
+1. Créer un dépôt du nom de Devoirs dans votre compte personnel (et non pas dans EdisonLorgues1SD1617).
 Attention à bien cocher la case pour la création du fichier d’accueil:
 Initialize this repository with a README.
 1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/Devoirs/33-34-35page38/](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).
