@@ -36,6 +36,10 @@ Pour mardi 6 septembre 2016
 
 1. Apprendre la définition 1 et faire l'exemple 2 du [polycopié sur le second degré](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Polycopi%C3%A9/secondDegre.pdf).
 
+1. Ajouter une photo à son profil GitHub.
+
+1. [Terminer l'activité GitHub](https://github.com/EdisonLorgues1SD1617/Math1SD1617/tree/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Activit%C3%A9s/GitHub) 
+
  **Devoir à la maison**:
 
 Pour lundi 12 septembre 2016
