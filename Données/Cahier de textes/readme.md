@@ -14,7 +14,7 @@ Mardi 6 septembre 2016
 
 Lundi 5 septembre 2016 (En salle informatique)
 
-1. [Activité de prise en main du dépôt GitHub du cours de mathématique.](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Activit%C3%A9s/gitHub.pdf)
+1. [Activité de prise en main du dépôt GitHub du cours de mathématique.](https://github.com/EdisonLorgues1SD1617/Math1SD1617/tree/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Activit%C3%A9s/GitHub)
 
 1. [Activité 2 page 23](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Images/2p23.png): Réaliser une typologie pour les paraboles en utilisant [géogebra en ligne](https://www.geogebra.org/apps).
 
