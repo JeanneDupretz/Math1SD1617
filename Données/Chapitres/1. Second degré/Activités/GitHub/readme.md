@@ -13,9 +13,9 @@
 Attention à bien cocher la case pour la création du fichier d’accueil:
 Initialize this repository with a README.
 1. Se connecter à [netcourrier.com](https://www.netcourrier.com/) et modifier le [mot de passe](https://www-2.netcourrier.com/netc/auth/pwd.php?back=/auth/options)
-1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/Devoirs/33-34-35page38/](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).
-1. Identifiez-vous sur ShareLaTeX en utilisant l'adresse email publique de votre compte github (demandez le mot de passe à l'enseignant).
+1. Identifiez-vous sur [ShareLaTeX](https://fr.sharelatex.com/login) en utilisant l'adresse email publique de votre compte github (demandez le mot de passe à l'enseignant).
 1. Modifier le [mot de passe](https://fr.sharelatex.com/user/settings) de votre compte ShareLaTeX
+1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/Devoirs/33-34-35page38/](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).
 1. Proposer une correction de l'exercice de l'élève exemple élève1sd1617.
 1. Valider les modifications de mots de passe en cochant l'issue prévue à cette effet sur le dépôt [Devoirs](https://github.com/EdisonLorgues1SD1617/Devoirs/issues/1).
 1. Créer un projet shareLaTeX en partant de ce modèle de fichier LaTeX (copier/coller le code du fichier .tex).
