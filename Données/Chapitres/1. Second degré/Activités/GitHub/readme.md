@@ -13,6 +13,7 @@
 Attention à bien cocher la case pour la création du fichier d’accueil:
 Initialize this repository with a README.
 1. Se connecter à [netcourrier.com](https://www.netcourrier.com/) ((Demandez le mot de passe à l'enseignant) et modifier le [mot de passe](https://www-2.netcourrier.com/netc/auth/pwd.php?back=/auth/options)
+1. Consultez vos mails.
 1. Identifiez-vous sur [ShareLaTeX](https://fr.sharelatex.com/login) en utilisant l'adresse email publique de votre compte github (demandez le mot de passe à l'enseignant).
 1. Modifier le [mot de passe](https://fr.sharelatex.com/user/settings) de votre compte ShareLaTeX
 1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/Devoirs/33-34-35page38/](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).
