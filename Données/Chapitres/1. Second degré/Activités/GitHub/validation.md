@@ -1,2 +1,0 @@
-- [ ] Mohamed Ayadi
-- [ ] Alexandre Bouille
