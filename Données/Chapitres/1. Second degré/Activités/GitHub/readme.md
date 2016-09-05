@@ -8,11 +8,11 @@
 1. [Ouvrir une session](https://github.com/login?return_to=%2FEdisonLorgues1SD1617%2FMath1SD1617%2Ftree%2Fmaster%2FDonn%25C3%25A9es%2FChapitres%2F1.%2520Second%2520degr%25C3%25A9%2FActivit%25C3%25A9s%2FGitHub) avec le compte à votre nom (Demandez le mot de passe à l'enseignant).
 1. Ouvrir le menu [Settings/account](https://github.com/settings/profile) accessible depuis en haut à droite.
 1. Modifier le [mot de passe](https://github.com/settings/admin) de votre compte GitHub.
-1. Ajouter une [adresse mail](https://github.com/settings/emails) de votre choix à votre compte.
 1. Valider ces modifications en commentant l'issue prévue à cette effet sur le dépôt [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Math1SD1617/issues/1).
 1. Créer un dépôt du nom de Devoirs dans votre compte personnel (et non pas dans EdisonLorgues1SD1617).
 Attention à bien cocher la case pour la création du fichier d’accueil:
 Initialize this repository with a README.
+1. Se connecter à [netcourrier.com](https://www.netcourrier.com/) et modifier le [mot de passe](https://www-2.netcourrier.com/netc/auth/pwd.php?back=/auth/options)
 1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/Devoirs/33-34-35page38/](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).
 1. Identifiez-vous sur ShareLaTeX en utilisant l'adresse email publique de votre compte github (demandez le mot de passe à l'enseignant).
 1. Modifier le [mot de passe](https://fr.sharelatex.com/user/settings) de votre compte ShareLaTeX
