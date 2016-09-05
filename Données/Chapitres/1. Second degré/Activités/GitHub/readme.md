@@ -16,6 +16,7 @@
 1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/TravailPersonnel//33--34-35page38/](https://github.com/eleve1sd1617/TravailPersonnel/tree/master/33--34-35page38).
 1. Proposer une correction de l'exercice de l'élève exemple élève1sd1617.
 1. Valider les modifications de mots de passe en cochant l'issue prévue à cette effet sur le dépôt [Devoirs](https://github.com/EdisonLorgues1SD1617/Devoirs/issues/1).
+1. Essayer d'accéder au dépôt [EdisonLorgues1SD1617](https://github.com/EdisonLorgues1SD1617) depuis un smartphone.
 1. Créer un projet shareLaTeX en partant de ce modèle de fichier LaTeX (copier/coller le code du fichier .tex).
 1. Le rendre public en le paramètrant via le menu partage en haut à gauche.
 1. Créer un dépôt de TravailPersonnel sur votre compte (et non pas dans EdisonLorgues1SD1617).
