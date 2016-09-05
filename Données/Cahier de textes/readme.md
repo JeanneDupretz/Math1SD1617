@@ -42,6 +42,7 @@ Pour mardi 6 septembre 2016
 
 1. Recopier la définition 1 et faire l'exemple 2 du [polycopié sur le second degré](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Polycopi%C3%A9/secondDegre.pdf).
 
+1. Publier les difficultés rencontrées sur le fil de [Devoirs associé] (https://github.com/EdisonLorgues1SD1617/Devoirs/issues/2).
 1. Une fois le travail effectué ajouter un commentaire sur le fil de [Devoirs associé] (https://github.com/EdisonLorgues1SD1617/Devoirs/issues/2) en publiant le lien
 
 * Vers une photo de votre travail déposé préalablement sur votre dépot TravailPersonnel ou bien
@@ -49,6 +50,8 @@ Pour mardi 6 septembre 2016
 * Vers un document public ShareLaTeX.
 
 1. Cocher votre nom dans la liste du fil du devoir.
+
+1. N'hésitez pas à répondre aux questions posées par vos camarades !
 
  **Devoir à la maison**:
 
