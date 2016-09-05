@@ -48,6 +48,7 @@ Pour mardi 6 septembre 2016
 
 * Vers un document public ShareLaTeX.
 
+1. Cocher votre nom dans la liste du fil du devoir.
 
  **Devoir à la maison**:
 
