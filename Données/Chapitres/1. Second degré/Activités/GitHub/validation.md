@@ -1,2 +1,2 @@
-- Mohamed Ayadi []
-- Alexandre Bouille []
+- [ ] Mohamed Ayadi
+- [ ] Alexandre Bouille
