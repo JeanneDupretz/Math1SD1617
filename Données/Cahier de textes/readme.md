@@ -34,13 +34,20 @@ Devoirs
 
 Pour mardi 6 septembre 2016
 
-1. [Exercices 33,34 et 35 page 38](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Images/33-34-35p38.jpg)
-
-1. Apprendre la définition 1 et faire l'exemple 2 du [polycopié sur le second degré](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Polycopi%C3%A9/secondDegre.pdf).
-
 1. Ajouter une photo à son profil GitHub.
 
 1. [Terminer l'activité GitHub](https://github.com/EdisonLorgues1SD1617/Math1SD1617/tree/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Activit%C3%A9s/GitHub). Poster une issue pour signaler une éventuelle difficulté dans l'utilisation du dépôt de la classe, de votre dépôt personnel ou du site ShareLaTeX.
+
+1. [Exercices 33,34 et 35 page 38](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Images/33-34-35p38.jpg)
+
+1. Recopier la définition 1 et faire l'exemple 2 du [polycopié sur le second degré](https://github.com/EdisonLorgues1SD1617/math1sd1617/blob/master/Donn%C3%A9es/Chapitres/1.%20Second%20degr%C3%A9/Polycopi%C3%A9/secondDegre.pdf).
+
+1. Une fois le travail effectué ajouter un commentaire sur le fil de [Devoirs associé] (https://github.com/EdisonLorgues1SD1617/Devoirs/issues/2) en publiant le lien
+
+* Vers une photo de votre travail déposé préalablement sur votre dépot TravailPersonnel ou bien.
+
+* Vers un document public ShareLaTeX.
+
 
  **Devoir à la maison**:
 
