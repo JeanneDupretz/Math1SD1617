@@ -8,7 +8,7 @@
 1. [Ouvrir une session](https://github.com/login?return_to=%2FEdisonLorgues1SD1617%2FMath1SD1617%2Ftree%2Fmaster%2FDonn%25C3%25A9es%2FChapitres%2F1.%2520Second%2520degr%25C3%25A9%2FActivit%25C3%25A9s%2FGitHub) avec le compte à votre nom (Demandez le mot de passe à l'enseignant).
 1. Ouvrir le menu [Settings/account](https://github.com/settings/profile) accessible depuis en haut à droite.
 1. Modifier le [mot de passe](https://github.com/settings/admin) de votre compte GitHub.
-1. Se connecter à [netcourrier.com](https://www.netcourrier.com/) à l'aide de votre adresse publique github ((Demandez le mot de passe à l'enseignant) et modifier le [mot de passe](https://www-2.netcourrier.com/netc/auth/pwd.php?back=/auth/options)
+1. Se connecter à [netcourrier.com](https://www.netcourrier.com/) à l'aide de votre adresse publique github (Demandez le mot de passe à l'enseignant) et modifier le [mot de passe](https://www-2.netcourrier.com/netc/auth/pwd.php?back=/auth/options)
 1. Consultez vos mails.
 1. Ajoutez une [adresse mail](https://github.com/settings/emails) à votre compte GitHub, si vous le désirez et réglez la [règle de notification](https://github.com/settings/notifications).
 1. Identifiez-vous sur [ShareLaTeX](https://fr.sharelatex.com/login) en utilisant l'adresse email publique de votre compte github (demandez le mot de passe à l'enseignant).
