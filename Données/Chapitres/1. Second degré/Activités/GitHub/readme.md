@@ -9,7 +9,7 @@
 1. Ouvrir le menu [Settings/account](https://github.com/settings/profile) accessible depuis en haut à droite.
 1. Modifier le [mot de passe](https://github.com/settings/admin) de votre compte GitHub.
 1. Ajoutez une adresse mail si vous le désirez et réglez la [règle de notification](https://github.com/settings/notifications).
-1. Valider ces modifications en cochant l'issue prévue à cette effet sur le dépôt [Math1SD1617](https://github.com/EdisonLorgues1SD1617/Devoirs/issues/1).
+1. Valider ces modifications en cochant l'issue prévue à cette effet sur le dépôt [Devoirs](https://github.com/EdisonLorgues1SD1617/Devoirs/issues/1).
 1. Créer un dépôt du nom de Devoirs dans votre compte personnel (et non pas dans EdisonLorgues1SD1617).
 Attention à bien cocher la case pour la création du fichier d’accueil:
 Initialize this repository with a README.
