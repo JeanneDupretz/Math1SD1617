@@ -13,12 +13,12 @@
 1. Ajoutez une [adresse mail](https://github.com/settings/emails) à votre compte GitHub, si vous le désirez et réglez la [règle de notification](https://github.com/settings/notifications).
 1. Identifiez-vous sur [ShareLaTeX](https://fr.sharelatex.com/login) en utilisant l'adresse email publique de votre compte github (demandez le mot de passe à l'enseignant).
 1. Modifier le [mot de passe](https://fr.sharelatex.com/user/settings) de votre compte ShareLaTeX
-1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/Devoirs/33-34-35page38/](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).
+1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/TravailPersonnel//33--34-35page38/](https://github.com/eleve1sd1617/TravailPersonnel/tree/master/33--34-35page38).
 1. Proposer une correction de l'exercice de l'élève exemple élève1sd1617.
 1. Valider les modifications de mots de passe en cochant l'issue prévue à cette effet sur le dépôt [Devoirs](https://github.com/EdisonLorgues1SD1617/Devoirs/issues/1).
 1. Créer un projet shareLaTeX en partant de ce modèle de fichier LaTeX (copier/coller le code du fichier .tex).
 1. Le rendre public en le paramètrant via le menu partage en haut à gauche.
-1. Créer un dépôt du nom de Devoirs dans votre compte personnel (et non pas dans EdisonLorgues1SD1617).
+1. Créer un dépôt de TravailPersonnel sur votre compte (et non pas dans EdisonLorgues1SD1617).
 Attention à bien cocher la case pour la création du fichier d’accueil:
 Initialize this repository with a README.
 1. Créer un fichier /33-34-35p38/readme.md dans votre dépôt Devoirs dans lequel vous recopiez l'adresse de votre document LaTeX rendu public.
