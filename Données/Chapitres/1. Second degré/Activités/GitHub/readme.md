@@ -8,12 +8,9 @@
 1. [Ouvrir une session](https://github.com/login?return_to=%2FEdisonLorgues1SD1617%2FMath1SD1617%2Ftree%2Fmaster%2FDonn%25C3%25A9es%2FChapitres%2F1.%2520Second%2520degr%25C3%25A9%2FActivit%25C3%25A9s%2FGitHub) avec le compte à votre nom (Demandez le mot de passe à l'enseignant).
 1. Ouvrir le menu [Settings/account](https://github.com/settings/profile) accessible depuis en haut à droite.
 1. Modifier le [mot de passe](https://github.com/settings/admin) de votre compte GitHub.
-1. Ajoutez une [adresse mail](https://github.com/settings/emails) si vous le désirez et réglez la [règle de notification](https://github.com/settings/notifications).
-1. Créer un dépôt du nom de Devoirs dans votre compte personnel (et non pas dans EdisonLorgues1SD1617).
-Attention à bien cocher la case pour la création du fichier d’accueil:
-Initialize this repository with a README.
-1. Se connecter à [netcourrier.com](https://www.netcourrier.com/) ((Demandez le mot de passe à l'enseignant) et modifier le [mot de passe](https://www-2.netcourrier.com/netc/auth/pwd.php?back=/auth/options)
+1. Se connecter à [netcourrier.com](https://www.netcourrier.com/) à l'aide de votre adresse publique github ((Demandez le mot de passe à l'enseignant) et modifier le [mot de passe](https://www-2.netcourrier.com/netc/auth/pwd.php?back=/auth/options)
 1. Consultez vos mails.
+1. Ajoutez une [adresse mail](https://github.com/settings/emails) à votre compte GitHub, si vous le désirez et réglez la [règle de notification](https://github.com/settings/notifications).
 1. Identifiez-vous sur [ShareLaTeX](https://fr.sharelatex.com/login) en utilisant l'adresse email publique de votre compte github (demandez le mot de passe à l'enseignant).
 1. Modifier le [mot de passe](https://fr.sharelatex.com/user/settings) de votre compte ShareLaTeX
 1. Cliquer sur le lien ShareLaTeX du dépot de démonstration [eleve1sd1617/Devoirs/33-34-35page38/](https://github.com/eleve1sd1617/Devoirs/tree/master/33-34-35page38).
@@ -21,4 +18,7 @@ Initialize this repository with a README.
 1. Valider les modifications de mots de passe en cochant l'issue prévue à cette effet sur le dépôt [Devoirs](https://github.com/EdisonLorgues1SD1617/Devoirs/issues/1).
 1. Créer un projet shareLaTeX en partant de ce modèle de fichier LaTeX (copier/coller le code du fichier .tex).
 1. Le rendre public en le paramètrant via le menu partage en haut à gauche.
+1. Créer un dépôt du nom de Devoirs dans votre compte personnel (et non pas dans EdisonLorgues1SD1617).
+Attention à bien cocher la case pour la création du fichier d’accueil:
+Initialize this repository with a README.
 1. Créer un fichier /33-34-35p38/readme.md dans votre dépôt Devoirs dans lequel vous recopiez l'adresse de votre document LaTeX rendu public.
